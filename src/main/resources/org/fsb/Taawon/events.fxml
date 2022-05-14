@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="700.0" prefWidth="778.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.fsb.Taawon.controllers.EventsController">
+   <children>
+      <AnchorPane prefHeight="50.0" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="ad" fitHeight="45.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imgs/50041.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="delete1" fitHeight="41.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imgs/d.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="modif1" fitHeight="35.0" fitWidth="154.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imgs/images.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TextArea minHeight="-Infinity" minWidth="-Infinity" prefHeight="64.0" prefWidth="778.0" text="Liste des Evenements" AnchorPane.bottomAnchor="215.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </TextArea>
+      <TableView fx:id="eventsTable" layoutY="79.0" prefHeight="108.0" prefWidth="778.0" AnchorPane.bottomAnchor="92.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="79.0">
+        <columns>
+          <TableColumn fx:id="num_tab" prefWidth="75.0" text="num" />
+          <TableColumn fx:id="titre_tab" prefWidth="75.0" text="titre" />
+            <TableColumn fx:id="but_tab" prefWidth="75.0" text="objectif" />
+            <TableColumn fx:id="begin" prefWidth="75.0" text="date_debut" />
+            <TableColumn fx:id="end" prefWidth="75.0" text="date_fin" />
+            <TableColumn fx:id="c" prefWidth="75.0" text="couverture" />
+            <TableColumn fx:id="l" prefWidth="75.0" text="lieu" />
+            <TableColumn fx:id="t" prefWidth="75.0" text="tarif" />
+            <TableColumn fx:id="numd" prefWidth="75.0" text="num_depense" />
+            <TableColumn fx:id="numr" prefWidth="75.0" text="num_recette" />
+            <TableColumn fx:id="adherent" prefWidth="75.0" text="adherents" />
+            <TableColumn fx:id="p" prefWidth="75.0" text="pauvres" />
+            <TableColumn fx:id="actionCol" prefWidth="75.0" text="actions" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="281.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imgs/47748.png" />
+         </image>
+      </ImageView>
+      <MenuButton layoutX="320.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="202.0" text="rechercher par">
+        <items>
+          <MenuItem fx:id="num" mnemonicParsing="false" onAction="#rechercher_par_num" text="num" />
+          <MenuItem fx:id="titre" mnemonicParsing="false" onAction="#rechercher_par_titre" text="titre" />
+            <MenuItem fx:id="objectif" mnemonicParsing="false" onAction="#rechercher_par_objectif" text="objectif" />
+            <MenuItem fx:id="date_d" mnemonicParsing="false" onAction="#rechercher_par_date_debut" text="date_debut" />
+            <MenuItem fx:id="date_f" mnemonicParsing="false" onAction="#rechercher_par_date_fin" text="date_fin" />
+            <MenuItem fx:id="li" mnemonicParsing="false" onAction="#rechercher_par_lieu" text="lieu" />
+            <MenuItem fx:id="mot" mnemonicParsing="false" onAction="#rechercher_par_mot" text="mot" />
+        </items>
+      </MenuButton>
+      <AnchorPane layoutX="533.0" layoutY="14.0" prefHeight="50.0" prefWidth="235.0">
+         <children>
+            <ImageView fx:id="added1" fitHeight="45.0" fitWidth="35.0" layoutX="187.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imgs/50041.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="delete11" fitHeight="41.0" fitWidth="41.0" layoutX="32.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imgs/d.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="modif11" fitHeight="35.0" fitWidth="154.0" layoutX="106.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imgs/images.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

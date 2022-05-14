@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="310.0" style="-fx-background-color: #2c344b;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.fsb.Taawon.controllers.AuthController">
+   <children>
+      <AnchorPane layoutY="419.0" prefHeight="48.0" prefWidth="310.0" style="-fx-background-color: #43bb73;" />
+      <AnchorPane prefHeight="48.0" prefWidth="310.0" style="-fx-background-color: #2e354f;">
+         <children>
+            <Label layoutX="131.0" layoutY="14.0" text="Taawon" textFill="#8c90b3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="19.0" layoutY="222.0" prefHeight="50.0" prefWidth="270.0" style="-fx-border-color: #8c90b3; -fx-border-radius: 2;" />
+      <AnchorPane layoutX="20.0" layoutY="298.0" prefHeight="50.0" prefWidth="270.0" style="-fx-border-color: #8c90b3; -fx-border-radius: 2;" />
+      <Circle fill="DODGERBLUE" layoutX="154.0" layoutY="155.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="310.0" style="-fx-background-color: #2c344b;">
+         <children>
+            <AnchorPane layoutY="419.0" onMouseClicked="#login" prefHeight="48.0" prefWidth="310.0" style="-fx-background-color: #43bb73; -fx-cursor: hand;">
+               <children>
+                  <Label fx:id="login" layoutX="111.0" layoutY="11.0" prefHeight="26.0" prefWidth="89.0" text="Se connecter" textFill="#fefefe">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="48.0" prefWidth="310.0" style="-fx-background-color: #2e354f;">
+               <children>
+                  <Label layoutX="92.0" layoutY="14.0" text="Taawon - S'identifier" textFill="#8c90b3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="21.0" layoutY="289.0" prefHeight="50.0" prefWidth="270.0" style="-fx-border-color: #8c90b3; -fx-border-radius: 2;">
+               <children>
+                  <TextField fx:id="userInput" focusTraversable="false" layoutX="1.0" layoutY="2.0" prefHeight="25.0" prefWidth="245.0" promptText="Nom d'utilisateur" style="-fx-background-color: transparent; -fx-text-inner-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="2.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="21.0" layoutY="351.0" prefHeight="50.0" prefWidth="270.0" style="-fx-border-color: #8c90b3; -fx-border-radius: 2;">
+               <children>
+                  <PasswordField fx:id="passwordInput" focusTraversable="false" promptText="Mot de passe" style="-fx-background-color: transparent; -fx-text-inner-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="128.0" fitWidth="128.0" layoutX="91.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imgs/login.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="56.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imgs/logo-white-small.png" />
+               </image>
+            </ImageView>
+           
+            
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

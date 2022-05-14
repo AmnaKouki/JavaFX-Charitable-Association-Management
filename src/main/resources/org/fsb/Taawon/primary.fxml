@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1047.0" stylesheets="@theme.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.fsb.Taawon.controllers.PrimaryController">
+	<children>
+		<AnchorPane fx:id="dashContent" layoutX="-3.0" layoutY="51.0" prefHeight="459.0" prefWidth="801.0" style="-fx-background-color: #EEEEEE;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="224.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="51.0">
+			<children>
+				<VBox fx:id="content" layoutX="-3.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+			</children>
+		</AnchorPane>
+		<Pane layoutX="77.0" layoutY="114.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="51.0" prefWidth="806.0" style="-fx-background-color: #333333;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+		<AnchorPane layoutX="569.0" layoutY="33.0" prefHeight="52.0" prefWidth="1047.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<children>
+				<Text fx:id="fullnameText" fill="WHITE" layoutX="905.703125" layoutY="21.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="Bonjour, Amna" AnchorPane.rightAnchor="62.833984375" AnchorPane.topAnchor="8.05078125" />
+            <AnchorPane fx:id="imagePane" layoutX="1003.0" layoutY="10.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="10.0">
+               <children>
+      				<ImageView fx:id="userImage" fitHeight="29.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+      					<image>
+      						<Image url="@imgs/user.png" />
+      					</image>
+      				</ImageView>
+               </children>
+            </AnchorPane>
+				<ImageView fitHeight="24.0" fitWidth="150.0" layoutX="14.0" layoutY="13.0" onMouseClicked="#homeOnClick" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="13.0">
+					<image>
+						<Image url="@imgs/logo-white.png" />
+					</image>
+				</ImageView>
+            <Text fx:id="roleText" fill="WHITE" layoutX="958.802734375" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role" AnchorPane.rightAnchor="61.759765625" AnchorPane.topAnchor="26.0">
+               <font>
+                  <Font size="11.0" />
+               </font></Text>
+			</children>
+		</AnchorPane>
+		<AnchorPane prefHeight="459.0" prefWidth="224.0" style="-fx-background-color: #CCCCCC;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="51.0">
+			<children>
+				<ImageView fitHeight="24.0" fitWidth="24.0" layoutX="26.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@imgs/dashboard.png" />
+					</image>
+				</ImageView>
+				<ImageView fitHeight="24.0" fitWidth="24.0" layoutX="26.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@imgs/community.png" />
+					</image>
+				</ImageView>
+				<ImageView fitHeight="29.0" fitWidth="23.0" layoutX="23.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@imgs/statistiques.png" />
+					</image>
+				</ImageView>
+				<ImageView fitHeight="29.0" fitWidth="23.0" layoutX="23.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@imgs/calculator.png" />
+					</image>
+				</ImageView>
+				<Text fx:id="tab1" layoutX="66.0" layoutY="46.68359375" onMouseClicked="#tab1onclick" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-cursor: hand;" text="Tableau de bord" AnchorPane.leftAnchor="66.0" AnchorPane.topAnchor="31.576171875">
+					<font>
+						<Font size="14.0" />
+					</font>
+				</Text>
+				<Text layoutX="66.0" layoutY="93.0" onMouseClicked="#tab2onclick" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-cursor: hand;" text="Communauté" AnchorPane.leftAnchor="66.0">
+					<font>
+						<Font size="14.0" />
+					</font>
+				</Text>
+				<Text layoutX="64.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-cursor: hand;" text="Statistiques" AnchorPane.topAnchor="262.734375">
+					<font>
+						<Font size="14.0" />
+					</font>
+				</Text>
+				<Text layoutX="66.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-cursor: hand;" text="Comptabilité" AnchorPane.leftAnchor="66.0">
+					<font>
+						<Font size="14.0" />
+					</font>
+				</Text>
+				<Text layoutX="98.0" layoutY="129.0" onMouseClicked="#tab2onclick" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-cursor: hand;" text="Adhésions" wrappingWidth="95.9375">
+					<font>
+						<Font size="14.0" />
+					</font>
+				</Text>
+				<Text layoutX="98.0" layoutY="158.0" onMouseClicked="#tab3onclick" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-cursor: hand;" text="Dons" wrappingWidth="95.9375">
+					<font>
+						<Font size="14.0" />
+					</font>
+				</Text>
+				<Text layoutX="98.0" layoutY="188.0" onMouseClicked="#openNecessiteux" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-cursor: hand;" text="Nécessiteux" wrappingWidth="95.9375">
+					<font>
+						<Font size="14.0" />
+					</font>
+				</Text>
+				<Text layoutX="98.0" layoutY="218.0" onMouseClicked="#openFamille" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-cursor: hand;" text="Familles" wrappingWidth="95.9375">
+					<font>
+						<Font size="14.0" />
+					</font>
+				</Text>
+				<ImageView fitHeight="23.0" fitWidth="16.0" layoutX="64.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@imgs/arrow.png" />
+					</image>
+				</ImageView>
+				<ImageView fitHeight="16.0" fitWidth="16.0" layoutX="64.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@imgs/arrow.png" />
+					</image>
+				</ImageView>
+				<ImageView fitHeight="23.0" fitWidth="16.0" layoutX="64.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@imgs/arrow.png" />
+					</image>
+				</ImageView>
+				<ImageView fitHeight="23.0" fitWidth="16.0" layoutX="64.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@imgs/arrow.png" />
+					</image>
+				</ImageView>
+				<ImageView fitHeight="29.0" fitWidth="23.0" layoutX="23.0" layoutY="363.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@imgs/calendar.png" />
+					</image>
+				</ImageView>
+				<Text layoutX="66.0" layoutY="380.0" onMouseClicked="#ouvrirEvent" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-cursor: hand;" text="Événement">
+					<font>
+						<Font size="14.0" />
+					</font>
+				</Text>
+            <AnchorPane fx:id="logoutPane" layoutX="12.0" layoutY="415.0" prefHeight="40.0" prefWidth="224.0" style="-fx-background-color: #adadad;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="30.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imgs/logout.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="72.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-cursor: hand;" text="Déconnexion">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+			</children>
+		</AnchorPane>
+	</children>
+</AnchorPane>

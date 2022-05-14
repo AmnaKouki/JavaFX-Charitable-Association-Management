@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="778.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.fsb.Taawon.controllers.Add_Event_Controller">
+   <children>
+      <TextArea prefHeight="50.0" prefWidth="615.0" text="      add an event ;" AnchorPane.bottomAnchor="650.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </TextArea>
+      <ImageView fitHeight="31.0" fitWidth="39.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imgs/50041.png" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="28.0" layoutY="65.0" prefHeight="251.0" prefWidth="508.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="65.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="244.0" minWidth="10.0" prefWidth="206.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="246.0" minWidth="24.0" prefWidth="246.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="33.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="74.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="87.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="108.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="132.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="147.0" minHeight="10.0" prefHeight="37.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="156.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="170.0" minHeight="10.0" prefHeight="170.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="30.0" prefWidth="103.0" text="titre_evenement" />
+            <Label prefHeight="28.0" prefWidth="100.0" text="objectif" GridPane.rowIndex="1" />
+            <Label prefHeight="30.0" prefWidth="100.0" text="date_debut" GridPane.rowIndex="2" />
+            <Label prefHeight="29.0" prefWidth="103.0" text="date_fin" GridPane.rowIndex="3" />
+            <Label prefHeight="29.0" prefWidth="114.0" text="couverture" GridPane.rowIndex="4" />
+            <Label prefHeight="29.0" prefWidth="112.0" text="lieu" GridPane.rowIndex="5" />
+            <Label prefHeight="33.0" prefWidth="107.0" text="tarif" GridPane.rowIndex="6" />
+            <Label prefHeight="29.0" prefWidth="143.0" text="adherents" GridPane.rowIndex="7" />
+            <TextField fx:id="titre" prefHeight="25.0" prefWidth="107.0" GridPane.columnIndex="1" />
+            <TextField fx:id="but" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label prefHeight="43.0" prefWidth="141.0" GridPane.rowIndex="8" />
+            <DatePicker fx:id="date_d" prefHeight="25.0" prefWidth="243.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <DatePicker fx:id="date_f" prefHeight="25.0" prefWidth="243.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label prefHeight="27.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <graphic>
+                  <HBox minWidth="-Infinity" prefHeight="27.0" prefWidth="259.0" spacing="20.0">
+                     <children>
+                        <CheckBox fx:id="nationale" mnemonicParsing="false" onAction="#handlebox1" prefHeight="15.0" prefWidth="79.0" text="nationale" />
+                        <CheckBox fx:id="internationale" mnemonicParsing="false" onAction="#handlebox2" prefHeight="17.0" prefWidth="102.0" text="internationale" />
+                     </children>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                  </HBox>
+               </graphic>
+            </Label>
+            <TextField fx:id="lieu" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="tariff" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="adherents" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <HBox prefHeight="18.0" prefWidth="235.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="10">
+               <children>
+                  <Button fx:id="g" mnemonicParsing="false" onAction="#retourner" prefHeight="25.0" prefWidth="80.0" text="retourner">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="added" mnemonicParsing="false" onAction="#ajouter_event1" prefHeight="25.0" prefWidth="84.0" text="ajouter" />
+               </children>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="306.0" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <children>
+                  <ImageView fitHeight="39.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imgs/icone-de-fleche-vers-le-bas-vert.png" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" text="+Dépenses">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+                  <ImageView fitHeight="39.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imgs/icone-de-fleche-vers-le-haut-vert.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="recette" mnemonicParsing="false" onMouseClicked="#recettes" text="+revenus" />
+               </children>
+            </HBox>
+            <MenuButton fx:id="id" mnemonicParsing="false" prefHeight="29.0" prefWidth="194.0" text="ajouter des pauvres selon" GridPane.halignment="CENTER" GridPane.rowIndex="8">
+               <items>
+                  <MenuItem fx:id="age" mnemonicParsing="false" text="age" />
+                  <MenuItem fx:id="sante" mnemonicParsing="false" text="etat_santé" />
+                  <MenuItem fx:id="civil" mnemonicParsing="false" text="etat_civil" />
+                  <MenuItem fx:id="salaire" mnemonicParsing="false" text="salaire" />
+                  <MenuItem fx:id="sexe" mnemonicParsing="false" text="sexe" />
+                  <MenuItem fx:id="condition" mnemonicParsing="false" text="autre condition" />
+               </items>
+            </MenuButton>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="778.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea prefHeight="387.0" prefWidth="555.0" text="Liste des Recettes" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </TextArea>
+      <TableView layoutY="79.0" prefHeight="283.0" prefWidth="600.0" AnchorPane.bottomAnchor="38.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="79.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="num" />
+          <TableColumn prefWidth="75.0" text="libelle" />
+            <TableColumn prefWidth="75.0" text="categorie" />
+            <TableColumn prefWidth="75.0" text="type" />
+            <TableColumn prefWidth="75.0" text="montant" />
+            <TableColumn prefWidth="75.0" text="date_operation" />
+            <TableColumn prefWidth="75.0" text="mode_paiement" />
+            <TableColumn prefWidth="75.0" text="num_cheque" />
+            <TableColumn prefWidth="75.0" text="num_don" />
+            <TableColumn prefWidth="75.0" text="num_compte" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="40.0" fitWidth="52.0" layoutX="505.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imgs/50041.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="503.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="add me">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="40.0" fitWidth="42.0" layoutX="207.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imgs/47748.png" />
+         </image>
+      </ImageView>
+      <MenuButton layoutX="246.0" layoutY="38.0" mnemonicParsing="false" text="rechercher par">
+        <items>
+          <MenuItem mnemonicParsing="false" text="num" />
+          <MenuItem mnemonicParsing="false" text="montant" />
+            <MenuItem mnemonicParsing="false" text="num_don" />
+            <MenuItem mnemonicParsing="false" text="date_operation" />
+            <MenuItem mnemonicParsing="false" text="mot" />
+        </items>
+      </MenuButton>
+      <ImageView fitHeight="52.0" fitWidth="50.0" layoutX="386.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imgs/d.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="47.0" layoutX="442.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imgs/images.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

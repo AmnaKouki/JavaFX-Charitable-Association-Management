@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="666.0" stylesheets="@theme.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<Group layoutX="20.0" layoutY="22.05078125">
+			<children>
+				<TextField fx:id="libelleInput" layoutY="24.94921875" prefHeight="25.0" prefWidth="622.0" />
+				<Text layoutX="1.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Libelle" />
+			</children>
+		</Group>
+		<Group layoutX="431.0" layoutY="90.0">
+			<children>
+				<Text layoutX="1.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" />
+      		<DatePicker fx:id="dateInput" layoutY="27.0" prefHeight="25.0" prefWidth="210.0" />
+			</children>
+		</Group>
+		<ButtonBar layoutX="159.0" layoutY="371.0" prefHeight="25.0" prefWidth="666.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+			<buttons>
+				<Button fx:id="cancelBtn" mnemonicParsing="false" text="Annuler" />
+				<Button fx:id="editBtn" mnemonicParsing="false" text="Modifier" />
+			</buttons>
+			<padding>
+				<Insets bottom="20.0" left="25.0" right="25.0" top="20.0" />
+			</padding>
+		</ButtonBar>
+      <Group layoutX="227.0" layoutY="90.0">
+         <children>
+            <ChoiceBox fx:id="categorieInput" layoutX="1.0" layoutY="26.0" prefHeight="25.0" prefWidth="185.0" />
+            <Text layoutX="1.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Catégorie" />
+         </children>
+      </Group>
+      <Group layoutX="229.0" layoutY="165.0">
+         <children>
+            <TextField fx:id="montantInput" layoutY="24.94921875" prefHeight="25.0" prefWidth="184.0" />
+            <Text layoutX="1.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Montant" />
+         </children>
+      </Group>
+      <Group layoutX="19.0" layoutY="90.0">
+         <children>
+            <ChoiceBox fx:id="typeInput" layoutX="1.0" layoutY="26.0" prefHeight="25.0" prefWidth="185.0" />
+            <Text layoutX="1.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" />
+         </children>
+      </Group>
+      <Group layoutX="19.0" layoutY="231.0">
+         <children>
+            <ChoiceBox fx:id="modepaieInput" layoutX="1.0" layoutY="26.0" prefHeight="25.0" prefWidth="185.0" />
+            <Text layoutX="1.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mode de paiement" />
+         </children>
+      </Group>
+      <Group layoutX="229.0" layoutY="232.0">
+         <children>
+            <TextField fx:id="numcompteInput" layoutY="24.94921875" prefHeight="25.0" prefWidth="184.0" />
+            <Text layoutX="1.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero Compte" />
+         </children>
+      </Group>
+      <Group layoutX="432.0" layoutY="232.0">
+         <children>
+            <TextField fx:id="numchequeInput" layoutY="24.94921875" prefHeight="25.0" prefWidth="207.0" />
+            <Text layoutX="1.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero Cheque" />
+         </children>
+      </Group>
+      <Group layoutX="431.0" layoutY="165.0">
+         <children>
+            <TextField fx:id="cinInput" layoutY="24.94921875" prefHeight="25.0" prefWidth="210.0" />
+            <Text layoutX="1.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CIN donateur" />
+         </children>
+      </Group>
+      <Group layoutX="21.0" layoutY="165.0">
+         <children>
+            <TextField fx:id="quantiteInput" layoutY="24.94921875" prefHeight="25.0" prefWidth="184.0" />
+            <Text layoutX="1.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantité" />
+         </children>
+      </Group>
+	</children>
+</AnchorPane>
